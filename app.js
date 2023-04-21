@@ -25,12 +25,12 @@ function specialMessage(flavor){
 specialMessage (icecreamFlavor)
 
 
-document.write("Yum! " + icecreamFlavor + "!     Great Choice!");
+document.write("laughs evilly! " + icecreamFlavor + "      , Great Choice!");
 
 if (icecreamFlavor == "strawberry"){
     alert("Number #1 Flavor");
 } else {
-  alert("Yummy!");
+  alert("Isn't it great to get the things you desire?");
 }
 
 
@@ -41,13 +41,27 @@ if (icecreamFlavor == "strawberry"){
 
 
 
-function addTwoNumbers(){
-  let num1 = 4;
-  let num2 = 4;
-  let sum = num1 = num2;
-  console.log(sum);
-  return sum;
+// function addTwoNumbers(){
+//   let num1 = 4;
+//   let num2 = 4;
+//   let sum = num1 = num2;
+//   console.log(sum);
+//   return sum;
+
+
+
+
+
+
+function rateMyPage() {
+ let rating = prompt("You can have anything you want with a little training. Between numbers 1-10? How bad do you want icecream?");
+ while (rating < 1 || rating > 11 || isNaN(rating)) {
+  rating = prompt("You just have to learn to be more assertive. And I can show you how. Pick a number between 1 to 10.");
+ }
+
+  for (let i = 0; i < rating; i++){
+    document.write("<img class=loop-img' src='giphy.gif' alt='Icecream' />");
+  }
 
 
 }
-
